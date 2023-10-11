@@ -7,7 +7,7 @@ const mongoosedb=require('./config/mongoose');
 
 app.set('view engine','ejs');
 app.set('views','./views');
-app.use(express.static('.assests'));
+app.use(express.static('./assests/css/'));
 
 app.use(express.urlencoded());
 app.use('/',myRout);
