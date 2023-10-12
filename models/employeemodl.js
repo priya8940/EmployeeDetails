@@ -22,10 +22,10 @@ const userSchema=new mongoose.Schema({
         required:true
     },
     dob:{
-        type:String,
+        type:Date,
         required:true
     },
-    department:{
+    dept:{
         type:String,
         required:true
     },
@@ -33,7 +33,10 @@ const userSchema=new mongoose.Schema({
         type:String,
         required:true
     },
-    
+    doj:{
+        type:String,
+        required:true
+    },
 });
 const user=mongoose.model('user',userSchema);
 module.exports=user;
