@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>PASSWORD</th>
+            <th>SALRY</th>
+        </tr>
+        <% for(let emp of employees){ %>
+        <tr>
+            <td><%= emp.name %></td>
+            <td><%= emp.email %></td>
+            <td><%= emp.password %></td>
+            <td><%= emp.salary %></td>
+        </tr>
+        <%}%>
+    </table>
+    <div>
+        <a href="/emptocsv">Download Employees Data</a>
+    </div>
+</body>
+</html>

@@ -7,5 +7,7 @@ router.post('/employee/create',empController.create);
 
 
 router.get('/employee',empController.empData);
+router.get('/employees',empController.allEmployees);
+router.get('/emptocsv',empController.empToCSV);
 
 module.exports=router;
