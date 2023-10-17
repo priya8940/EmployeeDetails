@@ -1,0 +1,35 @@
+<!--we will append all employee from this file-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/allEmployee.css">
+    
+</head>
+<body>
+    <table id="allempdata">
+       <tr>
+           <th>NAME</th>
+           <th>EMAIL</th>
+           <th>SALARY</th>
+           <th>DEPARTMENT</th>
+           <th>ROLE</th>
+
+       </tr>
+        <% for(let emp of allEmpArr){ %>
+            <tr>
+                <td><%=emp.name%> </td>
+                <td><%=emp.email%> </td>
+                <td><%=emp.salary%> </td>
+                <td><%=emp.dept%> </td>
+                <td><%=emp.role%> </td>
+            </tr>
+
+         <% }%>
+    </table>
+    <!--giving link to download data-->
+    <a href="/download-employees">Download Employees</a>
+</body>
+</html>
