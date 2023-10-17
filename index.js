@@ -9,7 +9,7 @@ const mongoosedb=require('./config/mongoose');
 
 app.set('view engine','ejs');
 app.set('views','./views');
-app.use(express.static('.assests'));
+app.use(express.static('./assests'));
 
 app.use('/', myRout);
 //BROWSER SENDS REQ ONLY SERVER SO WE HAVE TO TELL THAT YOU HV TO SEE THIS URL IN ROUTES FOR THIS YOU HAVE TO USE MIDDLEWARE
