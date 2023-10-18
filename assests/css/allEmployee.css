@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    background-color: aquamarine;
+}
+#allempdata{
+    margin: 2px;
+}
+table, th, td {
+    border: 2px solid;
+    padding: 8px;
+  }
+  table{
+    
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    
+  }
+  th {
+    background-color: #04AA6D;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  a{
+   margin-left: 75%;
+  }
+  
