@@ -56,7 +56,7 @@ module.exports.create= async function(req,res){
        // massage:"Emp Saved Succesfully",
      //   empData
    // })
-    res.render('data',empData )
+    res.render('savedData',empData )
     return;
     
 }
